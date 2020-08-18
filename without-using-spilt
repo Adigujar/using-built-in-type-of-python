@@ -1,0 +1,10 @@
+input_string = " big black bug bit a big black dog on his big black nose"
+new_string = []
+start = 0
+end = 0
+while " " in input_string[start + 1:]:
+    start = input_string.index(" ",start + 1)
+    new_string.append(input_string[end:start])
+    end = start
+new_string.append(input_string[end:])
+print(new_string)
